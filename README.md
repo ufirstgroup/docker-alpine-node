@@ -8,5 +8,5 @@ docker run -it --rm \
   -e GROUP_ID=`id -g` \
   -v $HOME:/homedir \
   -v `pwd -P`:/workdir  \
-  ufirstgroup/alpine-node:7.10.0 node
+  ufirstgroup/alpine-node:8.0.0 node
 ```
