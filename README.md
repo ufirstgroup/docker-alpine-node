@@ -2,6 +2,8 @@
 
 # docker-alpine-node
 
+based on https://github.com/mhart/alpine-node
+
 ```bash
 docker run -it --rm \
   -e USER_ID=`id -u` \
