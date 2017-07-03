@@ -2,7 +2,9 @@
 
 # docker-alpine-node
 
-based on https://github.com/mhart/alpine-node
+based on https://hub.docker.com/r/library/node/
+
+node:
 
 ```bash
 docker run -it --rm \
@@ -10,5 +12,16 @@ docker run -it --rm \
   -e GROUP_ID=`id -g` \
   -v $HOME:/homedir \
   -v `pwd -P`:/workdir  \
-  ufirstgroup/alpine-node:8.0.0 node
+  ufirstgroup/alpine-node:8.1.1 node
+```
+
+yarn:
+
+```bash
+docker run -it --rm \
+  -e USER_ID=`id -u` \
+  -e GROUP_ID=`id -g` \
+  -v $HOME:/homedir \
+  -v `pwd -P`:/workdir  \
+  ufirstgroup/alpine-node:8.1.1 yarn
 ```
