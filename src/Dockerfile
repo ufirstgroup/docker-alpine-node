@@ -1,4 +1,4 @@
-FROM node:8.1.3-alpine
+FROM node:8.2.0-alpine
 
 MAINTAINER Jean-Luc Geering <jeanluc.geering@ufirstgroup.com>
 
