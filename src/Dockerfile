@@ -1,4 +1,4 @@
-FROM node:8.5.0-alpine
+FROM node:8.9.3-alpine
 
 MAINTAINER Jean-Luc Geering <jeanluc.geering@ufirstgroup.com>
 
@@ -6,6 +6,7 @@ MAINTAINER Jean-Luc Geering <jeanluc.geering@ufirstgroup.com>
 
 RUN apk update && apk upgrade && apk add \
   bash \
+  git \
   su-exec \
   tini
 
