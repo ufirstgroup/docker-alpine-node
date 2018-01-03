@@ -12,7 +12,7 @@ docker run -it --rm \
   -e GROUP_ID=`id -g` \
   -v $HOME:/homedir \
   -v `pwd -P`:/workdir  \
-  ufirstgroup/alpine-node:6.12.2 node
+  ufirstgroup/alpine-node:9.3.0 node
 ```
 
 yarn:
@@ -23,5 +23,5 @@ docker run -it --rm \
   -e GROUP_ID=`id -g` \
   -v $HOME:/homedir \
   -v `pwd -P`:/workdir  \
-  ufirstgroup/alpine-node:6.12.2 yarn
+  ufirstgroup/alpine-node:9.3.0 yarn
 ```
