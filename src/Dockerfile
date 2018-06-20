@@ -8,7 +8,12 @@ RUN apk update && apk upgrade && apk add \
   bash \
   git \
   su-exec \
-  tini
+  tini \
+  g++ \
+  make \
+  bash \
+  zlib-dev \
+  libpng-dev
 
 USER root
 
