@@ -5,15 +5,21 @@ MAINTAINER Jean-Luc Geering <jeanluc.geering@ufirstgroup.com>
 # install bash, su-exec and tini
 
 RUN apk update && apk upgrade && apk add \
-  bash \
+  build-base \
+  alpine-sdk \
+  autoconf \
+  automake \
   git \
-  su-exec \
-  tini \
-  g++ \
-  make \
-  bash \
-  zlib-dev \
-  libpng-dev
+  nasm \
+  libjpeg-turbo \
+  libjpeg-turbo-dev \
+  libpng \
+  libpng-dev \
+  libtool \
+  libwebp \
+  libwebp-dev \
+  zlib \
+  zlib-dev  
 
 USER root
 
