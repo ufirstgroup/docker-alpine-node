@@ -6,6 +6,7 @@ MAINTAINER Jean-Luc Geering <jeanluc.geering@ufirstgroup.com>
 
 RUN apk update && apk upgrade && apk add \
   autoconf \
+  automake \
   bash \
   git \
   su-exec \
